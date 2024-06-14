@@ -23,7 +23,7 @@ def create_wave():
         ani_index += 1
     
     
-    for i in range(290,0,8):
+    for i in range(0,290,8):
             writer.write_file(f"../output/wave_{ani_index}.svg",
             f"""<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
             <path d="M0 100 A100 {i}  0 0 0 100 100" fill="none" stroke="white" />
@@ -32,7 +32,7 @@ def create_wave():
             ani_index += 1
 
     
-    for i in range(290,0,8)[::-1]:
+    for i in range(0,290,8)[::-1]:
             writer.write_file(f"../output/wave_{ani_index}.svg",
             f"""<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
             <path d="M0 100 A100 {i}  0 0 0 100 100" fill="none" stroke="white" />
